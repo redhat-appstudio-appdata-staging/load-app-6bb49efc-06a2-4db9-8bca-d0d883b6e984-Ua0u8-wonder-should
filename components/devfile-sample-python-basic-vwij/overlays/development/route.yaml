@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: devfile-sample-python-basic-vwij
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: devfile-sample-python-basic-vwij
+    app.kubernetes.io/part-of: load-app-6bb49efc-06a2-4db9-8bca-d0d883b6e984
+  name: devfile-sample-python-basopdo
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: devfile-sample-python-basic-vwij
+    weight: null
+status: {}
